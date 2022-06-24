@@ -58,10 +58,13 @@ if (isset($_POST['cadastrar_administrador'])) {
     $_SESSION['erroE'] = 0;
   }
 
+  
+
+
   if ($_SESSION['erroM'] == 0 and $_SESSION['erroN'] == 0 and $_SESSION['erroE'] == 0 and $_SESSION['erroT'] == 0) {
 
     // Query de Inserir usuario administrador no banco
-    $sql = "INSERT INTO usuario(matricula, nome,  email, senha, perfil_id) VALUES ";
+    $sql = "INSERT INTO usuario(matricula, nome, email, senha, perfil_id) VALUES ";
     $sql .= "('$matricula','$nome','$email','$senha', '1')";
     $resultado = mysqli_query($conexao, $sql);
     echo "Administrador cadastrado com sucesso!!";
@@ -83,7 +86,7 @@ if (isset($_POST['cadastrar_administrador'])) {
 }
 
 
-// Cadastro de Gerente
+//Cadastrar Gerente
 
 if (isset($_POST['cadastrar_gerente'])) {
 
@@ -142,10 +145,13 @@ if (isset($_POST['cadastrar_gerente'])) {
     $_SESSION['erroE'] = 0;
   }
 
+  
+
+
   if ($_SESSION['erroM'] == 0 and $_SESSION['erroN'] == 0 and $_SESSION['erroE'] == 0 and $_SESSION['erroT'] == 0) {
 
-    // Query de Inserir usuario administrador no banco
-    $sql = "INSERT INTO usuario(matricula, nome,  email, senha, perfil_id) VALUES ";
+    // Query de Inserir usuario gerente no banco
+    $sql = "INSERT INTO usuario(matricula, nome, email, senha, perfil_id) VALUES ";
     $sql .= "('$matricula','$nome','$email','$senha', '2')";
     $resultado = mysqli_query($conexao, $sql);
     echo "Administrador cadastrado com sucesso!!";
@@ -165,6 +171,8 @@ if (isset($_POST['cadastrar_gerente'])) {
     exit();
   }
 }
+
+
 
 
 // Cadastro de Cliente
@@ -189,7 +197,7 @@ if (isset($_POST['cadastrar_cliente'])) {
   $resultn = mysqli_query($conexao, $queryn);
   $rown = mysqli_num_rows($resultn);
 
-  // Buscar se o nome já foi cadastrado ou não
+  // Buscar se o email já foi cadastrado ou não
   $querye = ("SELECT emailC FROM cliente WHERE emailC = '$email'");
   $resulte = mysqli_query($conexao, $querye);
   $rowe = mysqli_num_rows($resulte);
@@ -257,7 +265,6 @@ if (isset($_POST['cadastrar_cliente'])) {
     unset($_SESSIOn['erroE']);
     unset($_SESSIOn['erroT']);
     $_SESSION['sucesso'] = 1;
-    echo "Cliente cadastrado com sucesso!!";
     header('Location: ../listar/listar_clientes.php');
     exit();
   }

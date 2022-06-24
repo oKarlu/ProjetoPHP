@@ -3,8 +3,8 @@
 // Verificando se temos o id
 if (!empty($_GET['id'])) {
 
-  include "../validation/conn.php";
-  require "../validation/verifica.php";
+  include "../validacao/conn.php";
+  require "../validacao/verifica.php";
 
   $id = $_GET['id'];
 
@@ -17,5 +17,5 @@ if (!empty($_GET['id'])) {
     $resultDelete = $conexao->query($sqlDelete);
   }
 }
-
+$_SESSION['excluir'] = 1;
 header('Location: ../listar/listar_clientes.php');
