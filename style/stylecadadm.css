@@ -68,7 +68,7 @@ main h1::before{
   content: '';
   position: absolute;
   height: 4px;
-  width: 290px;
+  width: 10px;
   bottom: 3px;
   left: 0;
   border-radius: 8px;
@@ -84,7 +84,7 @@ form{
   text-decoration: none;
   color: white;
   font: 400 1rem var(--title-font);
-  background: rgb(37, 101, 220);
+  background: rgb(2, 5, 194);
   padding: 0.3rem 0.8rem;
   border-radius: 4px;
 }

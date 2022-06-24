@@ -12,7 +12,7 @@ session_start();
   <link rel="stylesheet" href="assets/fonts/style.css" />
 
   <!-- Styles -->
-  <link rel="stylesheet" href="../style/stylecadadministrador.css" />
+  <link rel="stylesheet" href="../style/stylecadadm.css" />
 
   <!-- FONTS -->
   <link rel="preconnect" href="https://fonts.gstatic.com" />

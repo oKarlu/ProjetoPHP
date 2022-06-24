@@ -52,7 +52,7 @@ body {
 main.container{
   background: white;
   min-width: 350px;
-  min-height: 40vh;
+  min-height: 45vh;
   padding: 2rem;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
@@ -68,7 +68,7 @@ main h1::before{
   content: '';
   position: absolute;
   height: 4px;
-  width: 310px;
+  width: 10px;
   bottom: 3px;
   left: 0;
   border-radius: 8px;
@@ -84,11 +84,10 @@ form{
   text-decoration: none;
   color: white;
   font: 400 1rem var(--title-font);
-  background: rgb(2, 5, 194);
+  background: rgb(37, 101, 220);
   padding: 0.3rem 0.8rem;
   border-radius: 4px;
 }
-
 
 .input-field{
   position: relative;
@@ -204,9 +203,9 @@ input[type="submit"]:hover {
 /*====  LOGO ============================ */
 .logo {
   font: 700 0.8rem var(--title-font);
-  color: rgb(0, 0, 0);
+  color: black;
   text-decoration: none;
-  margin-top: 0.5rem;
+  margin-top: 1.5rem;
 }
 
 .logo span {
@@ -219,7 +218,7 @@ input[type="submit"]:hover {
 }
 
 .logo-alt span {
-  color: rgb(18, 13, 116);
+  color: rgb(2, 5, 194);
   font-size: 1.2rem;
 }
 
@@ -228,7 +227,7 @@ input[type="submit"]:hover {
 .footer{
   display: flex;
   flex-direction: column;
-  margin-top: 1rem;
+  margin-top: -1rem;
 }
 
 .footer p{

@@ -1,5 +1,5 @@
 <?php
-    $conexao = mysqli_connect("localhost","developer","1234567","phpdb");
+    $conexao = mysqli_connect("localhost","root","","phpdb");
     if (!$conexao) {
         die("Connection failed: " . mysqli_connect_error());
     }

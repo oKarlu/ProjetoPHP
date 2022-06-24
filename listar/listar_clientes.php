@@ -115,7 +115,7 @@
             echo "<td>".$email."</td>";
             echo "<td>".$telefone."</td>";
             echo "<td> <a class = 'btn btn-sm btn-primary' href = '../alterar/alt_cliente.php?id=$user_data[id]'><i class='bi bi-pencil-square'></i> </a> </td>";
-            echo "<td> <a class = 'btn btn-sm btn-primary' href=popup_cliente.php?id=$id><i class='bi bi-trash''></i> </a> </td>";
+            echo "<td> <a class = 'btn btn-sm btn-danger' href=popup_cliente.php?id=$id><i class='bi bi-trash''></i> </a> </td>";
             echo "</tr>";
           }
 

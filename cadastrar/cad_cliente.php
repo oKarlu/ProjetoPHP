@@ -14,7 +14,7 @@ session_start();
   <link rel="stylesheet" href="assets/fonts/style.css" />
 
   <!-- Styles -->
-  <link rel="stylesheet" href="../style/stylecadcliente.css" />
+  <link rel="stylesheet" href="../style/stylecadclientes.css" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com" />

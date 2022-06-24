@@ -96,7 +96,7 @@
             echo "<td>".$nome."</td>"; 
             echo "<td>".$email."</td>"; 
             echo "<td> <a class = 'btn btn-sm btn-primary' href = '../alterar/alt_administrador.php?id=$user_data[id]'><i class='bi bi-pencil-square'></i> </a> </td>";
-            echo "<td> <a class = 'btn btn-sm btn-primary' href=popup_adm.php?id=$id><i class='bi bi-trash''></i> </a> </td>";
+            echo "<td> <a class = 'btn btn-sm btn-danger' href=popup_adm.php?id=$id><i class='bi bi-trash''></i> </a> </td>";
 
             echo "</tr>";
 
